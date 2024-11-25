@@ -115,7 +115,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pildid\kloun.jpg" />
+    <Content Include="Pildid\cat.jpg" />
     <Content Include="Pildid\Красный_крест.png" />
     <Content Include="SQL Tabel\TextFile1.txt" />
   </ItemGroup>

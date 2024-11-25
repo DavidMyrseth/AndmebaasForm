@@ -39,7 +39,7 @@ namespace AndmebaasForm
             adapter.Fill(laotable);
             foreach (DataRow item in laotable.Rows)
             {
-                laotable.Items.Add(item["LaoNimetus"]);
+                Ladu_cb.Items.Add(item["LaoNimetus"]);
             }
             conn.Close();
         }
@@ -243,13 +243,6 @@ namespace AndmebaasForm
 
             popupForm.Location = new Point(popupLocation.X + cellRectangle.Width, popupLocation.Y);
             popupForm.Show();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'andmebaas_Tarpv23DataSet1.Toode' table. You can move, or remove it, as needed.
-            this.toodeTableAdapter.Fill(this.Andmebaas_Tarpv23DataSet.Toode);
-
         }
     }
 }
