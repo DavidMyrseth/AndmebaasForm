@@ -14,7 +14,7 @@ namespace AndmebaasForm
 {
     public partial class Form1 : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Andmebaas_Tarpv23;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=AndmebassSQL;Integrated Security=True");
         SqlCommand cmd;
         SqlDataAdapter adapter;
         OpenFileDialog open;
@@ -33,7 +33,7 @@ namespace AndmebaasForm
         private void NaitaLaod()
         {
             conn.Open();
-            cmd = new SqlCommand("SELECT Id, LaoNimetus FROM Ladu",conn);
+            cmd = new SqlCommand("SELECT Id, LaoNimetus FROM Ladu", conn);
             adapter = new SqlDataAdapter(cmd);
             laotable = new DataTable();
             adapter.Fill(laotable);

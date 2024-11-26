@@ -44,5 +44,16 @@ namespace Andmebaas2.Properties {
                 return ((string)(this["Andmebaas_Tarpv23ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=AndmebassSQL;Integrated Securi" +
+            "ty=True")]
+        public string AndmebassSQLConnectionString {
+            get {
+                return ((string)(this["AndmebassSQLConnectionString"]));
+            }
+        }
     }
 }

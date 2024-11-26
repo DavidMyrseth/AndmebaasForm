@@ -51,6 +51,8 @@
             this.toodeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.andmebaas_Tarpv23DataSet = new Andmebaas2.Andmebaas_Tarpv23DataSet();
             this.toodeTableAdapter = new Andmebaas2.Andmebaas_Tarpv23DataSetTableAdapters.ToodeTableAdapter();
+            this.Ladu = new System.Windows.Forms.Label();
+            this.Ladu_cb = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodeBindingSource)).BeginInit();
@@ -185,7 +187,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(542, 186);
             this.dataGridView1.TabIndex = 24;
-            this.dataGridView1.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -232,11 +233,30 @@
             // 
             this.toodeTableAdapter.ClearBeforeFill = true;
             // 
+            // Ladu
+            // 
+            this.Ladu.AutoSize = true;
+            this.Ladu.Location = new System.Drawing.Point(28, 160);
+            this.Ladu.Name = "Ladu";
+            this.Ladu.Size = new System.Drawing.Size(31, 13);
+            this.Ladu.TabIndex = 25;
+            this.Ladu.Text = "Ladu";
+            // 
+            // Ladu_cb
+            // 
+            this.Ladu_cb.FormattingEnabled = true;
+            this.Ladu_cb.Location = new System.Drawing.Point(81, 160);
+            this.Ladu_cb.Name = "Ladu_cb";
+            this.Ladu_cb.Size = new System.Drawing.Size(100, 21);
+            this.Ladu_cb.TabIndex = 26;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Ladu_cb);
+            this.Controls.Add(this.Ladu);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Pildi_otsing);
             this.Controls.Add(this.Uuenda);
@@ -253,7 +273,6 @@
             this.Controls.Add(this.Id_txt);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toodeBindingSource)).EndInit();
@@ -287,6 +306,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn kogusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hindDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn piltDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label Ladu;
+        private System.Windows.Forms.ComboBox Ladu_cb;
     }
 }
 
